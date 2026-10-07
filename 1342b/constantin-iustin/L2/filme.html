@@ -1,22 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="ro">
 <head>
-<title>Preferinte TV</title>
+<title>Preferințe TV</title>
+<link rel="stylesheet" href="stil.css">
 <style>
+ .meniu { background-color: lightblue; }
+ 
+
+ table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+ }
+ th, td {
+    border: 3px solid magenta;
+    padding: 10px;
+    text-align: center;
+ }
+ th {
+    background-color: #ccffff;
+    color: black;
+ }
+ .celula-principala {
+    background-color: #ccffff;
+    color: black;
+    font-weight: bold;
+ }
+ .date-tabel {
+    background-color: #e6ffe6;
+    color: #a52a2a;
+ }
 </style>
 </head>
 <body>
-<div style="background-color:Cornsilk">
-<a href="index.html">Acasa</a>
-<br>
-<a href="filme.html">Preferinte TV</a>
-<br>
-<a href="muzici.html">Preferinte muzicale</a>
-<br>
+
+<div class="meniu">
+    <a href="index.html">Acasă</a> |
+  
+    <a href="filme.html" class="activ">Preferințe TV</a> |
+    <a href="muzici.html">Preferințe muzicale</a>
+</div>
 <hr>
-</div>
+
 <div>
-<h1>Filme si seriale</h1>
+    <h1 style="text-align: center; font-family: sans-serif;">Filme și seriale</h1>
+    
+    <table>
+        <tr>
+            <th></th> 
+            <th>Ziua</th>
+            <th>Post TV</th>
+            <th>Emisiune</th>
+        </tr>
+        <tr>
+            <td rowspan="5" class="celula-principala">Emisiuni TV preferate</td>
+            <td class="date-tabel">Luni</td>
+            <td class="date-tabel">Discovery Channel</td>
+            <td class="date-tabel">Cum se fabrică</td>
+        </tr>
+        <tr>
+            <td class="date-tabel">Marți</td>
+            <td class="date-tabel">TVE</td>
+            <td class="date-tabel">Oblio’s return</td>
+        </tr>
+        <tr>
+            <td class="date-tabel">Miercuri</td>
+            <td class="date-tabel">PrimaTv</td>
+            <td class="date-tabel">Cronica Cârcotașilor</td>
+        </tr>
+        <tr>
+            <td class="date-tabel">Joi</td>
+            <td class="date-tabel">AXN</td>
+            <td class="date-tabel">Survivor</td>
+        </tr>
+        <tr>
+            <td class="date-tabel">Vineri</td>
+            <td class="date-tabel">Cartoon Network</td>
+            <td class="date-tabel">Scooby Doo</td>
+        </tr>
+    </table>
 </div>
+
 </body>
 </html>
