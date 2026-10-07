@@ -1,22 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="ro">
 <head>
-<title>Preferinte muzicale</title>
+<title>Preferințe muzicale</title>
+<!-- Legătura către fișierul CSS extern -->
+<link rel="stylesheet" href="stil.css">
 <style>
+ .meniu { background-color: pink; }
+
+ .lista-muzica {
+    background-color: #333333; 
+    color: white; 
+    padding: 20px;
+    width: 50%;
+    margin: 20px auto;
+ }
+ .lista-muzica a {
+    color: orange; 
+ }
 </style>
 </head>
 <body>
-<div style="background-color:Cornsilk">
-<a href="index.html">Acasa</a>
-<br>
-<a href="filme.html">Preferinte TV</a>
-<br>
-<a href="muzici.html">Preferinte muzicale</a>
-<br>
+
+<div class="meniu">
+    <a href="index.html">Acasă</a> |
+    <a href="filme.html">Preferințe TV</a> |
+    <!-- Am adăugat class="activ" pe pagina curentă -->
+    <a href="muzici.html" class="activ">Preferințe muzicale</a>
+</div>
 <hr>
-</div>
+
 <div>
-<h1>Melodii preferate</h1>
+    <h1>Melodii preferate</h1>
+    
+    
+    <ul class="lista-muzica">
+        <li><a href="https://www.youtube.com/watch?v=GJoV5Wxs98I&list=RDGJoV5Wxs98I&start_radio=1" target="_blank">Sami G - 10 zile</a></li>
+        <li><a href="https://www.youtube.com/watch?v=JX24AuoWcr8&list=RDJX24AuoWcr8&start_radio=1" target="_blank">Alex Botea-El Mexico</a></li>
+        <li><a href="https://www.youtube.com/watch?v=fcnDmrtj6Sk&list=RDfcnDmrtj6Sk&start_radio=1" target="_blank">Dai Dai</a></li>
+    </ul>
 </div>
+
 </body>
 </html>
+
+
+
