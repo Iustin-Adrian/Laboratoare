@@ -13,7 +13,7 @@
       }
       h1 {
         background-color: #00cc66;
-        color: rgb(255, 196, 0);
+        color: orange;
       }
       table,
       th,
@@ -21,19 +21,24 @@
         border: 1px solid black;
         border-collapse: collapse;
       }
+      table.center {
+        background-color: blue;
+      }
       .centre,
+      .centre th,
       .centre td {
-        border: 5px solid rgb(140, 0, 255);
+        border: 5px solid blue;
         padding: 15px;
+        background-color: #e5e908;
       }
       #s1 {
-        background-color: rgb(0, 4, 255);
+        background-color: red;
       }
       #s2 {
-        background-color: rgb(208, 255, 0);
+        background-color: rgb(0, 255, 170);
       }
       div {
-        color: rgb(0, 26, 255);
+        color: blue;
       }
     </style>
   </head>
@@ -80,6 +85,8 @@
       </table>
     </div>
 
-    <!-- pentru ca tabelel sunt transparente initial si preiau fundalul din div, iar cel de al 2 lea tabel aveau doar o jum din center, cred -->
+    <!-- Explicatie:
+1. Initial, tabelele nu aveau o regula background-color proprie (erau transparente), asa ca prin ele se vedea fundalul parintelui lor (<div id="s1"> rosu, respectiv <div id="s2"> galben). Pentru a schimba doar fundalul primului tabel in albastru fara a schimba culoarea sectiunii #s1, am aplicat background-color: blue pe selectorul table.center.
+2. In al doilea tabel, celulele aratau diferit deoarece doar celulele din antet (th) si cele din prima coloana (td) aveau atributul class="centre" in HTML, restul celulelor ramanand cu chenarul subtire de 1px si fara padding. Am uniformizat aspectul aplicand regula pe .centre, .centre th, .centre td. -->
   </body>
 </html>
