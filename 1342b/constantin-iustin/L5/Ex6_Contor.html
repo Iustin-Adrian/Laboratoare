@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bec cu contor</title>
+
+<script>
+var aprins = false;
+var numarAprinderi = 0;
+
+function comuta() {
+    var img = document.getElementById("bec");
+    aprins = !aprins;
+
+    if (aprins) {
+        img.src = "Bec_aprins.gif";
+        numarAprinderi++;
+        document.getElementById("contor").innerHTML = "Becul a fost aprins de " + numarAprinderi + " ori.";
+    } else {
+        img.src = "Bec stins.gif";
+    }
+}
+</script>
+
+</head>
+<body>
+
+<h1>Bec cu contor</h1>
+
+<p>
+<img id="bec" src="Bec stins.gif" width="100" height="180" onclick="comuta()">
+</p>
+
+<p id="contor">Becul a fost aprins de 0 ori.</p>
+
+</body>
+</html>
